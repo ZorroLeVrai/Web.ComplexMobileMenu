@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awsome show a hamburger menu (bars) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <div id="navigation-address" class="flex-row">
+        <a id="home-icon" href="javascript:void(0);" class="icon flex-fixed">
+          <i class="fa fa-home"></i>
+        </a>
+        <a
+          id="home-topnav"
+          href="#home"
+          class="active flex-expanded cursor-default"
+          >Home Page</a
+        >
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a id="menu-icon" href="javascript:void(0);" class="icon flex-fixed">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="menu" class="removed">
+        <!-- Navigation links (hidden by default) -->
+        <div id="home-links">
+          <a
+            id="football-selector"
+            class="menu-link home-link sub-menu"
+            href="javascript:void(0);"
+            >Football</a
+          >
+          <a
+            id="tennis-selector"
+            class="menu-link home-link sub-menu"
+            href="javascript:void(0);"
+            >Tennis</a
+          >
+          <a
+            id="about-selector"
+            class="menu-link home-link"
+            href="javascript:void(0);"
+            >About</a
+          >
+        </div>
+
+        <div id="football-links">
+          <a
+            id="lewandowski-selector"
+            class="menu-link football-link"
+            href="#Lewandowski"
+            >Robert Lewandowski</a
+          >
+          <a
+            id="debruyne-selector"
+            class="menu-link football-link"
+            href="#DeBruyne"
+            >Kevin De Bruyne</a
+          >
+          <a
+            id="messi-selector"
+            class="menu-link football-link sub-menu"
+            href="#Messi"
+            >Lionel Messi</a
+          >
+        </div>
+
+        <div id="tennis-links">
+          <a
+            id="djokovic-selector"
+            class="menu-link tennis-link"
+            href="#Djokovic"
+            >Novak Djokovic</a
+          >
+          <a
+            id="medvedev-selector"
+            class="menu-link tennis-link"
+            href="#Medvedev"
+            >Daniil Medvedev</a
+          >
+          <a id="nadal-selector" class="menu-link tennis-link" href="#Nadal"
+            >Rafael Nadal</a
+          >
+        </div>
+
+        <div id="messi-links">
+          <a
+            id="messi-career-selector"
+            class="menu-link messi-link"
+            href="#MessiCareer"
+            >Messi Career</a
+          >
+          <a
+            id="messi-private-selector"
+            class="menu-link messi-link"
+            href="#MessiPrivate"
+            >Messi Private Life</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content"></div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
